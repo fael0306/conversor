@@ -34,3 +34,13 @@ def dectobin(n):
     lista.append(n)
     lista.reverse()
     return lista
+
+def bintodec(a):
+    soma = 0
+    a = list(str(a))
+    for k in range(0,len(a)):
+        a[k]=int(a[k])
+    a.reverse()
+    for k in range(0,len(a)):
+        soma = soma+(a[k]*(2**k))
+    return soma
