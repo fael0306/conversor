@@ -24,13 +24,13 @@ def alphatonum(lista):
         if k=="B" or k=="b":
             lista[n]=11
         if k=="C" or k=="c":
-            lista[n]=10
+            lista[n]=12
         if k=="D" or k=="d":
-            lista[n]=10
+            lista[n]=13
         if k=="E" or k=="e":
-            lista[n]=10
+            lista[n]=14
         if k=="F" or k=="f":
-            lista[n]=10
+            lista[n]=15
     return lista
 
 def dectohex(n):
