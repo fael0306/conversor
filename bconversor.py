@@ -15,6 +15,7 @@ def numtoalpha(lista):
             lista[n]="F"   
         n=n+1
     return lista
+
 def alphatonum(lista):
     n=0
     for k in lista:
