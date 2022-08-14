@@ -32,7 +32,7 @@ def main():
             imp = 0
             print("\nDigite um número na base correta")
 
-    #try:
+    try:
         if b==2 and b2==2:
             resultado = n
         if b==2 and b2==10:
@@ -51,7 +51,7 @@ def main():
             resultado = bconversor.hextodec(n)
         if b==16 and b2==16:
             resultado = n
-   # except:
+    except:
             print("Número provavelmente na base errada. Tente novamente.")
             main()
         
