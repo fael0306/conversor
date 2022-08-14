@@ -65,4 +65,6 @@ def main():
     print("")
     if rep=="s" or rep=="S":
         main()
+    else:
+        print("")
 main()
