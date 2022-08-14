@@ -52,10 +52,11 @@ def main():
         if b==16 and b2==16:
             resultado = n
     except:
-            print("Número provavelmente na base errada. Tente novamente.")
+            print("Número provavelmente na base errada. Tente novamente.\n")
             main()
         
     print("O resultado é:",resultado)
+    print("")
 
     rep = input("Gostaria de converter novamente (s ou n): ")
     while rep!="s" and rep!="n" and rep!="N" and rep!="S":
