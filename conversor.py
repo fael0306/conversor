@@ -62,6 +62,7 @@ def main():
     while rep!="s" and rep!="n" and rep!="N" and rep!="S":
         print("Digite apenas s ou n.")
         rep = input("\nGostaria de converter novamente (s ou n): ")
+    print("")
     if rep=="s" or rep=="S":
         main()
 main()
