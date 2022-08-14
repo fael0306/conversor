@@ -16,23 +16,6 @@ def numtoalpha(lista):
         n=n+1
     return lista
 
-def alphatonum(lista):
-    n=0
-    for k in lista:
-        if k=="A" or k=="a":
-            lista[n]=10
-        if k=="B" or k=="b":
-            lista[n]=11
-        if k=="C" or k=="c":
-            lista[n]=12
-        if k=="D" or k=="d":
-            lista[n]=13
-        if k=="E" or k=="e":
-            lista[n]=14
-        if k=="F" or k=="f":
-            lista[n]=15
-    return lista
-
 def dectohex(n):
     lista=[]
     n = int(n)
@@ -76,16 +59,26 @@ def bintodec(a):
     for k in range(0,len(a)):
         soma = soma+(a[k]*(2**k))
     return soma
-# NÃO FUNCIONA DE HEXA PARA DECIMAL
+
 def hextodec(a):
     soma = 0
     a = list(str(a))
-    a = alphatonum(a)
-    for k in range(0,len(a)):
-        a[k]=int(a[k])
     a.reverse()
     for k in range(0,len(a)):
-        soma = soma+(a[k]*(16**k))
+        if a[k]=="A" or a[k]=="a":
+            soma = soma+(10*(16**k))
+        elif a[k]=="B" or a[k]=="b":
+            soma = soma+(11*(16**k))
+        elif a[k]=="C" or a[k]=="c":
+            soma = soma+(12*(16**k))
+        elif a[k]=="D" or a[k]=="d":
+            soma = soma+(13*(16**k))
+        elif a[k]=="E" or a[k]=="e":
+            soma = soma+(14*(16**k))
+        elif a[k]=="F" or a[k]=="f":
+            soma = soma+(15*(16**k))
+        else:
+            soma = soma+(int(a[k])*(16**k))
     return soma
 
 def bintohex(a):
