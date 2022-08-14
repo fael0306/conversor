@@ -88,5 +88,5 @@ def bintohex(a):
 
 def hextobin(a):
     r = hextodec(a)
-    r = dectobin(a)
+    r = dectobin(r)
     return r
