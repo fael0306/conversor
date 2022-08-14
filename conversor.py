@@ -32,13 +32,12 @@ def main():
             imp = 0
             print("\nDigite um número na base correta")
 
-    try:
+    #try:
         if b==2 and b2==2:
             resultado = n
         if b==2 and b2==10:
             resultado = bconversor.bintodec(n)
         if b==2 and b2==16:
-            resultado = bconversor.bintohex(n)
             resultado = bconversor.bintohex(n)
         if b==10 and b2==2:
             resultado = bconversor.dectobin(n)
@@ -46,14 +45,13 @@ def main():
             resultado = n
         if b==10 and b2==16:
             resultado = bconversor.dectohex(n)
-            resultado = bconversor.dectohex(n)
         if b==16 and b2==2:
             resultado = bconversor.hextobin(n)
         if b==16 and b2==10:
             resultado = bconversor.hextodec(n)
         if b==16 and b2==16:
             resultado = n
-    except:
+   # except:
             print("Número provavelmente na base errada. Tente novamente.")
             main()
         
